@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col">
+
+
+        <div class="row">
+            <div class="col text-center">
+
+                <p-button styleClass="p-0 p-button-rounded p-button-warning orange" (click)="addProductToListClick()" pRipple>
+                    <ng-template pTemplate="content">
+                        <img alt="logo" [src]="'assets/images/foods/white/' + product.icon + '.png'" />
+                    </ng-template>
+                </p-button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+
+                <div>{{product.name}}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<p-tabView>
+    <p-tabPanel [header]="item.name" *ngFor="let item of categories; let i = index" [selected]="i == 0">
+        <app-products-page [category]="item"></app-products-page>
+    </p-tabPanel>
+    
+    
+</p-tabView>
+<!-- <button pButton (click)="addCategoryClick()">+</button>
+<app-category-crud [(display)]="addCategory"></app-category-crud>
+ -->
+<!-- <app-product-item [product]="prod!"></app-product-item> -->

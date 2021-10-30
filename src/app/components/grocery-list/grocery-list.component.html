@@ -1,0 +1,9 @@
+<div *ngIf="listProducts !== undefined && this.listProducts.length > 0">
+    <div class="row" *ngFor="let item of listProducts; let i = index">
+        <app-gl-product-item [product]="item.product"></app-gl-product-item>
+
+    </div>
+</div>
+<div *ngIf="listProducts !== undefined && this.listProducts.length === 0">
+<p>No List Selected</p>
+</div>

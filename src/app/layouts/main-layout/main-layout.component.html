@@ -1,0 +1,48 @@
+<!-- add navbar -->
+<header>
+
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <div class="row">
+<div class="col pe-0">
+
+    <img [src]="'assets/images/foods/black/shopping-bag.png'" height="60" class="p-mr-0">
+
+</div>
+<div class="col pt-3 ps-0">
+    <h4>SimpleGrocery</h4>
+
+</div>
+            </div>
+        </ng-template>
+    </p-menubar>
+</header>
+<main class="h-100">
+
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col px-0">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="layout-footer py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <span class="text-muted">SimpleGrocery by ffex. Demoapp for Appwrite, October 2021.</span><br>
+                <span class="text-muted">Icon by Agata (<a href="https://goodstuffnononsense.com/">https://goodstuffnononsense.com/)</a></span>
+            </div>
+            <div class="col-2 pt-2">
+                <!-- 'Made with Appwrite' badge -->
+                <a href="https://appwrite.io/" target="_blank"
+                    style="position: fixed;right: 18px;bottom: 18px;z-index: 999;">
+                    <img style="width: 160px;" src="https://appwrite.io/images-ee/press/badge-pink-button.svg"
+                        alt="Built with Appwrite">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</footer>

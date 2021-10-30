@@ -1,0 +1,18 @@
+<app-list-crud [(display)]="addList"></app-list-crud>
+<div class="ms-4" *ngIf="lists !== undefined && this.lists.length > 0">
+    <div class="row" *ngFor="let item of lists; let i = index">
+    <a  routerLinkActive="active" class="border rounded" style="cursor:pointer" aria-current="true" [routerLink]="['/home/main',i]">
+        <app-gls-product-item [list]="item"></app-gls-product-item>
+    </a>
+
+    </div>
+    <div class="row">
+        <div class="col text-center mt-2">
+            <button pButton pRipple type="button" (click)="addListClick()" icon="pi pi-plus" class="p-button-rounded p-button-warning"></button>
+        </div>
+    </div>
+</div>
+<div *ngIf="lists === undefined || this.lists.length==0" class="text-center text-secondary">
+    <p><a [routerLink]=""  (click)="addListClick()">Create</a> new grocery list...</p>
+
+</div>

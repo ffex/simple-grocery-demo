@@ -1,0 +1,45 @@
+<form name="editForm" role="form" (ngSubmit)="login()" [formGroup]="editForm" autocomplete="nope">
+    <p-card header="Simple Grocery" subheader="Login">
+
+        <div class="row">
+            <div class="col">
+
+                <span class="p-float-label">
+                    <input id="username" type="text" class="w-100" pInputText formControlName="username">
+                    <label for="username">Username</label>
+                </span>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <span class="p-float-label">
+                    <input id="password" class="w-100" type="password" pPassword [feedback]="false" formControlName="password"/>
+                    <label for="password">Password</label>
+                </span>
+            </div>
+        </div>
+        <ng-template pTemplate="footer">
+            <div class="row">
+                <div class="col d-flex justify-content-end">
+                    <button type="submit" label="Login" pButton></button>
+
+                </div>
+            </div>
+            <div class="row border-top mt-3">
+                <div class="col text-center">
+                    Don't have an account?
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    Please <a routerLink="/signup">Sign In</a>
+                </div>
+                <div>
+                    <a routerLink="/home/main"> a Shortcut</a>
+                </div>
+            </div>
+
+        </ng-template>
+
+    </p-card>
+</form>
