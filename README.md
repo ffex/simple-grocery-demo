@@ -96,3 +96,6 @@ Write Access: `*`
   ng serve
 ```
 
+#### Special Thanks
+[Agata](https://goodstuffnononsense.com/) for the food images.
+
