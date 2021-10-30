@@ -1,5 +1,5 @@
 # SimpleGrocery
-![Appwrite Logo](./ReadmeResources/file.svg)
+![Appwrite Logo](./Public/built-with-appwrite.svg)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
 ## Development server
